@@ -36,11 +36,6 @@ namespace Moveis.Data.Repositories
             && (film.DirectorId == 0 || (f.DirectorId == film.DirectorId))))).ToList();
         }
 
-        //public List<Film> Filter(Film film)
-        //{
-        //    var entityFilter = _filmContext.Films.ToList();
-
-        //}
 
         public List<Film> GetAll()
         {

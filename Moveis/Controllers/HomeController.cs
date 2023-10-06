@@ -15,9 +15,9 @@ namespace Moveis.Controllers
             _filmService = filmService;
         }
     
-        public IActionResult Index(FilmAddEdit model)
+        public IActionResult Index(FilmDropDown model)
         {
-            
+            var films = _filmService.GetByFilter(model);
             return View();
         }
 
